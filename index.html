@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="./css bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"content="Notre boutique Game Master vous accueille, testez la nouvelle console Playstation 5 et Xbox Series X. Venez acheter ou vendre vos jeux et figurines au meilleur prix à 10 minutes de Lyon">
+        <title>Chez Game Master achetez ou vendez vos jeux/figurines au meilleur prix.</title>
+        <link rel="icon" href="./img/Game-Master-logo-.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        
+    <header>
+        <h1>Game Master</h1>         
+        <!-- NAV -->
+        <nav>
+            <!-- barre progression -->
+            <div class="progress-container">
+                <div class="progress-bar" id="Barre-progression"></div>
+            </div>
+
+            <div class="hamburg">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <!-- logo entreprise -->
+            <div class="symbole">
+            <img src="./img/Game Master logo.png" alt="logo de Game Master">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#ancre-jeux">Jeux</a></li>
+                    <li><a href="#ancre-figurines">Figurines</a></li>
+                    <li><a href="#ancre-setup">Video setup</a></li>
+                    <li><a href="#ancre-contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <a class="btn-header" href="#ancre-presentation">
+            <img src="./arrow-circle-down-solid.svg" alt="icone">
+        </a>
+    </header>
+    
+    <!-- video de fond -->
+    <div class="bloc">
+        <video id="video1" autoplay="autoplay" muted="" loop="infinite" src="./video/playstation.mp4"></video>
+    
+    <main>
+        <!-- boutons + liens -->
+        <div class="row d-flex justify-content-center m-5" id="ancre-presentation" >
+            <a class="btn btn-primary m-3 col-10 col-md-5 col-xl-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" href="https://twitter.com/?lang=fr" target="_blank">Twitter</a>
+            <a class="btn btn-secondary m-3 col-10 col-md-5 col-xl-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a class="btn btn-success m-3 col-10 col-md-5 col-xl-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitch" href="https://www.twitch.tv/" target="_blank">Twitch</a>
+            <a class="btn btn-danger m-3 col-10 col-md-5 col-xl-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Youtube" href="https://www.youtube.com/" target="_blank">Youtube</a>
+        <!-- offcanvas -->
+            <a class="btn btn-secondary m-3 col-10 col-xl-1" data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button" aria-controls="offcanvasExample1">
+                Menu
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel1">
+                <div class="offcanvas-header d-flex justify-content-center">
+                    <h2 class="offcanvas-title" id="offcanvasExampleLabel1">Boissons</h2>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-center">
+                    <div>
+                        en cours de rédaction 
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-secondary m-3 col-10 col-xl-1" data-bs-toggle="offcanvas" href="#offcanvasExample2" role="button" aria-controls="offcanvasExample2">
+                Horaires
+            </a>
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExampleLabel2">
+                <div class="offcanvas-header d-flex justify-content-center">
+                    <h2 class="offcanvas-title " id="offcanvasExampleLabel2">Horaires d'ouverture</h2>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body row d-flex justify-content-center">
+                    <div class="d-flex justify-content-center col-2">Lundi 9h-12h / 14h-19h<br>Mardi 9h-12h / 14h-19h<br>Mercredi 9h-12h / 14h-19h</div>
+                    <div class="d-flex justify-content-center col-2">Jeudi 9h-12h / 14h-19h<br>Vendredi 9h-12h / 14h-19h<br>Samedi 9h-12h / 14h-19h</div>
+                    <div class="d-flex justify-content-center col-12"><div>Dimanche fermé</div></div>
+                </div>
+            </div>
+            <a class="btn btn-secondary m-3 col-10 col-xl-1" data-bs-toggle="offcanvas" href="#offcanvasExample3" role="button" aria-controls="offcanvasExample3">
+                Tournois
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample3" aria-labelledby="offcanvasExampleLabel3">
+                <div class="offcanvas-header d-flex justify-content-center">
+                    <h2 class="offcanvas-title " id="offcanvasExampleLabel3">Tournois</h2>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-center">
+                    <div>
+                        en cours de rédaction
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <!-- Présentation entreprise -->
+        <section class="d-flex justify-content-center m-5">
+            <div class="col-8 col-md-6">
+            <p class="fw-bolder">
+                Crée en 2010 et situé à Meyzieu à 10 minutes de Lyon, Game Master vous propose un large choix de jeux et de figurines à des prix imbattables. Notre boutique se veut proche des gamers en vous proposant de réserver nos consoles et pc pour que vous puissiez jouer avec vos amis 7 jours sur 7 de 12h à 00h.
+            </p>
+            </div>   
+        </section>
+
+        <!-- section jeux videos -->
+        <section class="row d-flex justify-content-center m-5" id="ancre-jeux">
+            <!-- 1er carousel -->
+            <div id="carouseljv" class="carousel slide col-10 col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/pc.jpg" class="d-block w-100" alt="un gamer qui joue a un jeu video">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/siege.jpg" class="d-block w-100" alt="le setup">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/tournoi jv.jpg" class="d-block w-100" alt="tournoi sur fifa">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/duo pc.jpg" class="d-block w-100" alt="deux amis jouant sur pc">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/couple ps5.jpg" class="d-block w-100" alt="une console ps1">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouseljv" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouseljv" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- 1er accordion -->
+            <div class="accordion col-10 col-md-6" style="color:#fa1b8b" id="accordionjv">
+                <div class="accordion-item" style="background-color: black;">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #fa1b8b;" >
+                        Playstation 5
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionjv">
+                        <div class="accordion-body">
+                        Sachant que la Playstation 5 est en rupture de stock vous avez la posibilité de la commander dans notre boutique et vous la recevrez sous 7 jours.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" style="background-color: black;">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: #fa1b8b;">
+                        Réservation de consoles
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionjv">
+                        <div class="accordion-body">
+                        Nous mettons à votre disposition plusieurs consoles dont la Playstation 5, la Xbox Series X, la Nintendo Switch et plusieurs PC. Affronte tes amis et démontre tout ton talent au court de parties endiablées. Nous organisons régulièrement des tournois sur différents jeux comme fifa, tekken ou street fighter avec de nombreux lots à gagner.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" style="background-color: black;" >
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: #fa1b8b;" >
+                        Achat-Revente
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionjv">
+                        <div class="accordion-body">
+                        Nous reprenons vos jeux au meilleur prix.
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        
+        </section> 
+        <!-- section figurine -->
+        <section class="row d-flex justify-content-center m-5" id="ancre-figurines">
+            <!-- 2eme accordion -->
+            <div class="accordion col-10 col-md-6" style="color: #fa1b8b" id="accordionPanelsStayOpen">
+                <div class="accordion-item" style="background-color: black;">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color: #fa1b8b;">
+                        Figurines de qualité
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                        Nos figurines nous viennent tout droit du Japon et sont de qualité supérieure et à prix résonnable.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" style="background-color: black;">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo"style="background-color: #fa1b8b;" >
+                        Ateliers création de figurines
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                        Nous animons des ateliers création de figurines pour tout âge. Pour plus d'informations veuillez nous appeler au 06.XX.XX.XX.XX.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" style="background-color: black;">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="background-color: #fa1b8b;" >
+                        Achat Revente
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            Nous reprenons vos figurines au meilleur prix.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2eme carousel -->
+            <div id="carouselfigurines" class="carousel slide col-10 col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/goku.jpg" class="d-block w-100" alt="figurine de goku">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/itachi.jpg" class="d-block w-100" alt="figurine de itachi">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/zoro.jpg" class="d-block w-100" alt="figurine de zoro">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/killer.jpg" class="d-block w-100" alt="figurine de killer">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselfigurines" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselfigurines" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        
+        <!-- video setup -->
+        <div class="d-flex justify-content-center" id="ancre-setup">
+            <h2 class="fw-bolder mt-5">Découvre l'espace PC Gaming</h2> 
+        </div>
+        <div class="d-flex justify-content-center">
+        <video class="col-10 mb-5" id="video2" autoplay="autoplay" muted="" loop="infinite" src="./video/lan.mp4"></video>
+        </div>
+    </main>
+
+    <footer>
+        <!-- section "contact+map" -->
+        <section class="row d-flex justify-content-center" id="ancre-contact">
+            
+            <!-- map -->
+            <div class="row col-8 col-md-5 mt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44522.162609568324!2d4.976404149980046!3d45.778501450977465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c7093991a91f%3A0xaa34cfe600eae521!2s69330%20Meyzieu!5e0!3m2!1sfr!2sfr!4v1643099846590!5m2!1sfr!2sfr" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+     
+            <!-- contact -->   
+            <div class="row col-8 col-md-5 d-flex justify-content-center align-items-center mt-5" id="contact">
+                <form>
+                    <h2>Contactez-nous</h2>
+                    <div class="separation"></div>
+                    <div class="corps-formulaire d-flex flex-column">
+                        <div class="gauche">
+                            <div class="groupe">
+                                <label>Votre prénom</label>
+                                <input type="text" size="20" maxlength="20">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="groupe">
+                                <label>Votre adresse e-mail</label>
+                                <input type="text" size="20" maxlength="20">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="groupe">
+                                <label>Votre téléphone</label>
+                                <input type="text" size="20" maxlength="10">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="droite">
+                            <div class="groupe">
+                                <label>Message</label>
+                                <textarea placeholder="Saisissez ici..." > </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pied-formulaire">
+                        <button>Envoyer le message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="btn-arrow d-flex justify-content-center align-items-center">
+                <img src="./arrow-up-solid.svg" class="icone">
+            </div>
+        </section> 
+    </footer>
+    </div> 
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+
+    <script>
+    
+    // bouton qui descend le menu sur telephone
+    $(document).ready(function(){
+        $(".hamburg").on("click", function(){
+                $("nav ul").toggleClass("menu");
+        });
+    });
+
+    // nav bar invisible en haut de page
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('scroll');
+    }
+                else{
+                $('nav').removeClass('scroll');
+                }
+    })
+    </script>
+
+    </body>
+</html>
